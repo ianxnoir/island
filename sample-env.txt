@@ -1,0 +1,3 @@
+DB_NAME=<name of postgres database on your server>
+DB_USERNAME=<your postgresql user>
+DB_PASSWORD=<your postgresql user's password>

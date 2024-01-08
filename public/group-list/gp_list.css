@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400);
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin-top: 0;
+}
+
+.slideUp-enter-active {
+  transform: translateY(0);
+  transition: all .3s ease;
+}
+
+.slideUp-leave-active {
+  position: absolute;
+}
+
+.slideUp-enter {
+  transform: translateY(25%);
+  opacity: 0;
+}
+
+.openUp-enter-active, .openUp-leave-active {
+  transition: all 0.5s;
+}
+
+.openUp-enter, .openUp-leave-active {
+  opacity: 0;
+  transform: translateY(25%);
+}
+
+.vueApp {
+  padding: 0.5em;
+  height: 100%; /* important */
+  flex-direction: row;
+  margin: 0;
+  letter-spacing: 0.5px;
+  margin: 0 70px;
+    margin-top: 0px;
+    margin-right: 70px;
+    margin-bottom: 0px;
+    margin-left: 70px;
+}
+
+.sideBar_Chatroom {
+  display:flex;
+  height: 100%;
+  padding: 4px 40px 4px 40px;
+}
+
+
+.vueApp .colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+/* style of search-group-list */
+.vueApp .colors .user-room-preview-sidebar,
+.vueApp .colors .user-room-preview-wide {
+  margin: 0.5em;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  transition: all 0.1s;
+  cursor: pointer;
+  border-radius:10px;
+  box-shadow: 0 8px 16px -8px #2c6f89;
+  box-sizing: border-box;
+  width: 50%; /* or 40% */
+}
+  .vueApp .colors .user-room-preview-sidebar {
+    max-height: 250px;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+  }
+  .vueApp .colors .user-room-preview-wide {
+    height: 80px; 
+    max-height:1000px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+.vueApp .colors .user-room-preview-sidebar:hover,
+.vueApp .colors .user-room-preview-wide:hover {
+  text-shadow: 1px 1px 5px #9acbdf;
+  box-shadow: 1px 1px 10px #9acbdf;
+  color:#59aaca;
+  padding-left: 5%;
+}
+.vueApp .colors .user-room-preview-wide .chatroom-preview-name {
+  font-size: 23px;
+  width: 100%;
+}
+.vueApp .colors .user-room-preview-sidebar .chatroom-preview-name {
+  font-size: 15px;
+  width: 100%;
+}
+.vueApp .colors .user-room-preview-sidebar .chatroom-preview-latest-message {
+  font-size: 14px;
+  height: 18px;
+  width: 100%;
+  background-color: #59aaca;
+}
+  .user-room-nav-sidebar{  /* Roomlist size */
+    position: relative;
+    width: 30%;   
+    max-height: 100%; 
+    overflow-y: scroll;
+    margin-right:15px;
+  }
+
+  
+    .island-searchbar-sidebar,
+    .island-searchbar-free {
+      display: block;
+      appearance: none;
+      margin: 20px auto;
+      padding: 0.5em;
+      padding-left: 0.1em;
+      /* vertical-align: middle;  */
+      border: 1px solid transparent;
+      border-bottom: 1px solid black;
+      border-radius: 2px;
+      color: #59aaca;
+      background: transparent;
+      font-size: 1.8em;
+      width: 90%;
+      /* max-width: 20.25em; */
+      outline: 0;
+      font-weight:bold;
+      
+    }
+      .island-searchbar-sidebar {
+        position: fixed;
+        top: 0;
+      }
+  
+    div.user-room-nav-free {
+      padding-left:18px;
+      padding-right:18px;
+      overflow-y: scroll; 
+      flex:1;
+    }
+
+    .chatroom-preview-icon{
+      border-radius: 100%;
+      border: 1px solid var(--border-color);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      min-height:50px;
+      min-width:50px;
+      height: 50px;
+      width: 50px;
+      margin:5px;
+    }
+
+    .vueApp .chatroom-preview-privacy{
+      font-size: 10px;
+      /* color:black; */
+    }
+
+
+     

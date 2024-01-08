@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Island</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="index.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300, 400, 500" rel="stylesheet">
+   
+    <link rel = "icon" href =  "logo_island.png"
+        type = "image/x-icon">
+</head>
+<body style="background-image:url('background.jpg'); background-repeat: no-repeat; background-attachment: fixed;
+background-size: cover;">
+    <h1><img src="logo_island.png" style="width:40px;height:40px;" alt="">&nbsp;&nbsp;Island</h1><br>
+    <div class="container" id="container">
+     
+        <div class="form-container sign-in-container" >
+            <form id="forget" action="/forget" method="POST">
+                <h1>Forget your password?</h1>
+                <br>
+                <span>Enter your email below to receive your password reset instructions.</span>
+                <br>
+                <input type="email" placeholder="Email" id="fEmail" name="findEmail"/>
+                
+                
+                <button class="signIn" type="submit" id="submit">Submit</button>
+                <a href="login.html"> <- Back to Login</a>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                
+                <div class="overlay-panel overlay-right"> 
+                    <h2>It's OK, I remembered.</h2>
+                    
+                   
+                 </div>  
+            </div>
+        </div>
+    </div>
+    
+
+      
+
+  <script src="forgetpw.js"></script>
+  
+  
+
+  <script href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"></script>
+  <script src="https://kit.fontawesome.com/5071c4e8fb.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+</body>
+
+
+
+</html> 

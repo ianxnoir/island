@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Islands</title>
+    <link rel="stylesheet" href="gp_list.css">
+
+    <link rel='stylesheet' href='chatroom.css'>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
+    <link rel = "icon" href =  "logo_island.png"
+        type = "image/x-icon">
+
+</head>
+<body>
+    
+    <div id="vue" class='vueApp'>
+         <!-- Search and GroupList  -->
+        <user-room-nav
+            v-bind:filtered-rooms='filteredRooms'
+            v-bind:nav-style='navStyle'
+            v-bind:searchbar-style='searchbarStyle'>
+        </user-room-nav>
+        <current-chatroom-container
+            class="current-chatroom-container"
+            v-if="$root.chatroomVisible"
+            v-bind:chatroom-info='chatroomInfo'
+            v-bind:chatroom-member-list='chatroomMemberList'
+            v-bind:messages='messages'>
+        </current-chatroom-container>
+    </div>
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<!--Server side socket.io automatically hosts the client-side script at /socket.io/socket.io.js regardless of your actual file structure-->
+<script src='/socket.io/socket.io.js'></script>
+
+<script src='variables.js'></script>
+<script src='vue-overlay-templates.js'></script>
+<script src='vue-layout-templates.js'></script>
+<script src='vue-large-overlay-templates.js'></script>
+<script src='vue-video-chat-templates.js'></script>
+<script src='vue-message-templates.js'></script>
+
+<script src='socket-logic.js'></script>
+
+<script src='gp-list-methods.js'></script>   
+<script src="gp-list-components.js"></script>
+<script src="gp_list-general.js"></script>
+
+</body>
+</html>
